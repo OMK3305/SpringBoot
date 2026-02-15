@@ -49,6 +49,11 @@ public class StudentServiceImpl implements StudentService {
         studentRepository.deleteById(id);
     }
 
+//    @Override
+//    public StudentDto updateStudent1(Long id, AddStudentRequestDto addStudentRequestDto) {
+//        return null;
+//    }
+
     @Override
     public StudentDto updateStudent(Long id, AddStudentRequestDto addStudentRequestDto) {
         Student student = studentRepository.findById(id)

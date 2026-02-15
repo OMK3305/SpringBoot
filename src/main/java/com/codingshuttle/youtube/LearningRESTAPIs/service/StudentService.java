@@ -16,7 +16,8 @@ public interface StudentService {
 
     void deleteStudentById(Long id);
 
-    StudentDto updateStudent(Long id, AddStudentRequestDto addStudentRequestDto);
+    //StudentDto updateStudent(Long id, AddStudentRequestDto addStudentRequestDto);
+    StudentDto  updateStudent(Long id, AddStudentRequestDto addStudentRequestDto);
 
     StudentDto updatePartialStudent(Long id, Map<String, Object> updates);
 }
